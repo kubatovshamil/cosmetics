@@ -1,0 +1,45 @@
+.promo{
+  background: #F5F5F5;
+}
+.pink{
+  color: #FF1493;
+}
+
+.header .header__menu .active{
+	border-top: 2px solid #f33f3f;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__phone{
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__menu{
+    display: flex;
+    &__item{
+
+	  &__link{
+        padding: 41px 20px 20px 20px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+	}
+  }
+  &__contacts__links{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    &__img{
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.price{
+  &__title{
+    width: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff2350;
+    padding-bottom: 8px;
+    margin: 100px auto 40px auto;
+  }
+	&__slider{
+		margin-bottom: 40px !important;
+			/* price__slider styles */
+		&__content{
+			width: 1000px;
+			height: 366px;
+			margin: auto;
+			background: url('../img/bg_price.png');
+			background-color: #F5F5F5;
+			padding: 32px 50px;
+			outline: none;
+			&__title{
+				font-size: 21px;
+				font-weight: normal;
+				padding-bottom: 5px;
+			}
+			&__block{
+				display: flex;
+				justify-content: space-between;
+				font-size: 15px;
+				&__names p{
+					line-height: 24px;
+					
+				}
+				&__prices{
+					& p{
+						line-height: 24px;
+					}
+				}
+			}
+		}
+	}  
+}
+
+/*сладера*/
+.slick-dots{
+	position: static;
+	height: 33px;
+	padding: 0 32px;
+	& li {
+		width: 50px;
+		height: 2px;
+		background-color: #000000;
+	}
+	& .slick-active{
+		background-color: #FF2350;
+	}
+	& li button{
+		display: none;
+	}
+}	
+
+.slick-arrow{
+	background: #F5F5F5;
+	border-radius: 50%;
+	background: yellow;
+}
+
+.slick-arrow{
+	background: #F5F5F5;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	position: relative;
+}
+
+.slick-arrow:focus{
+	outline: none;
+}
+.fa-chevron-left:before{
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	font-size: 16px;	
+}
+
+.fa-chevron-right:before{
+	position: absolute;
+	top: 10px;
+	left: 14px;
+	font-size: 16px;
+}
+.slick-arrow:hover{
+	color: #FF2350;;
+}
+.slider-controls{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

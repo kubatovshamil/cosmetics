@@ -1,0 +1,53 @@
+.fourth{
+	background: url("../img/free_consult.png") center center / cover no-repeat;
+	width: 1274px;
+	height: 300px;
+	margin: 100px auto 100px auto;
+}
+
+.consult{
+	padding: 46px 88px 47px 88px;
+	&__title{
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 25px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		padding-bottom: 16px; 
+		&__color{
+			color: #FF2350;
+		}
+	}
+	&__form{
+		& input, 
+		button{
+			display: block;
+		}
+		& input{
+			width: 290px;
+			height: 50px;
+			padding: 16px 24px 16px 24px;
+			background: #FFFFFF;
+			border: none;
+			outline: none;
+			margin-bottom: 8px;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 18px;
+			color: #000000;
+		}
+		&__btn{
+			width: 290px;
+			height: 50px;
+			background: #FF2350;
+			border: none;
+			outline: none;
+			color: #FFFFFF;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 18px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
