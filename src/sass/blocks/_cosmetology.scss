@@ -1,0 +1,87 @@
+.cosmetology{
+	width: 1274px;
+	margin: auto;
+	padding: 100px 0 101px 0;	
+	&__title{
+	  width: 160px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff2350;
+    padding-bottom: 8px;
+    margin: 100px auto 40px auto;	
+	}
+	&__education{
+		background: #FFFFFF;
+		box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.1);
+		padding: 50px 50px 62px 33px;
+		position: relative;
+		& p{
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 18px;
+			color: #000000;
+			padding-bottom: 8px;
+		}
+		&__top{
+			margin-bottom: 12px;
+		}
+	}
+	&__names{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 24px;
+		& h4{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 21px;
+			line-height: 25px;
+		}
+		& p{
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 18px;
+			/* identical to box height */
+
+
+			color: #000000;
+		}
+		&__employee{
+			&__red{
+				color: #FF2350;
+			}
+		}
+	}
+}
+.btn-close{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border: 1px solid #C4C4C4;
+	box-sizing: border-box;
+	border-radius: 50%;
+	& .line{
+		position: absolute;
+		top: 8px;
+		left: 4px;
+		width: 10px;
+		border: 1px solid #000000;
+		transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+	}
+	& .line2{
+		position: absolute;
+		width: 10px;
+		top: 8px;
+		left: 4px;
+		border: 1px solid #000000;
+		transform: rotate(45deg);
+	}
+}
