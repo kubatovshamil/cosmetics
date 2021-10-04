@@ -1,0 +1,32 @@
+.eighth{
+	width: 100%;
+}
+
+.gallery{
+	&__title{
+		font-style: normal;
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 25px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #000000;
+		border-bottom: 2px solid #ff2350;
+		padding-bottom: 8px;
+		width: 98px;
+		margin: auto;
+	}
+	&__photos{
+		margin: 0 !important;
+		&__content{
+			margin: 60px auto 40px auto;
+			display: flex !important;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		img{
+			width: 350px;
+			height: 284px;
+		}
+	}
+}

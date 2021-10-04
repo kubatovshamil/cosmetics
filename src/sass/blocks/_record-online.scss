@@ -1,0 +1,54 @@
+.seventh{
+	width: 1274px;
+	height: 300px;
+	background: url('../img/online-record.png') center center / cover no-repeat;
+	margin: 100px auto;
+}
+
+.record-online{
+	padding: 32px 160px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	&__title{
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		width: 270px;
+		line-height: 35px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #000000;
+		border-bottom: 2px solid #ff2350;
+		padding-bottom: 8px;
+	}
+	&__form{
+		& input{
+			display: block;
+			width: 290px;
+			height: 50px;
+			padding: 16px 24px 16px 24px;
+			background: #FFFFFF;
+			border: none;
+			outline: none;
+			margin-bottom: 8px;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 18px;
+			color: #000000;
+		}
+		&__btn{
+			width: 290px;
+			height: 50px;
+			background: #FF2350;
+			border: none;
+			outline: none;
+			color: #FFFFFF;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 18px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}

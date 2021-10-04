@@ -36,9 +36,18 @@ p {
     margin: 0;
 }
 @import 'blocks/header';
-@import 'blocks/specialOffer';
+@import 'blocks/special-offer';
 @import 'blocks/price';
 @import 'blocks/consult';
 @import 'blocks/subscriptions';
 @import 'blocks/cosmetology';
+@import 'blocks/record-online';
+@import 'blocks/galarely';
+@import 'blocks/licenses';
 @import 'blocks/button';
+@import 'libs/swipebox';
+
+.slide img{
+  width :472px !important;
+  height: 350px !important;
+}
