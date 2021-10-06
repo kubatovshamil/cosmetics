@@ -2,6 +2,7 @@
 	width: 1274px;
 	margin: auto;
 	padding: 100px 0 101px 0;	
+	position: relative;
 	&__title{
 	  width: 160px;
     text-align: center;
@@ -52,7 +53,7 @@
 			color: #000000;
 		}
 		&__employee{
-			&:hover{
+			& h4:hover{
 				color: #FF2350;
 			}
 		}
