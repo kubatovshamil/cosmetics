@@ -52,7 +52,7 @@
 			color: #000000;
 		}
 		&__employee{
-			&__red{
+			&:hover{
 				color: #FF2350;
 			}
 		}
@@ -68,6 +68,7 @@
 	border: 1px solid #C4C4C4;
 	box-sizing: border-box;
 	border-radius: 50%;
+	z-index: 3;
 	& .line{
 		position: absolute;
 		top: 8px;

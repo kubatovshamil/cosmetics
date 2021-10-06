@@ -19,8 +19,6 @@
 			width: 1000px;
 			height: 366px;
 			margin: auto;
-			background: url('../img/bg_price.png');
-			background-color: #F5F5F5;
 			padding: 32px 50px;
 			outline: none;
 			&__title{
@@ -32,9 +30,10 @@
 				display: flex;
 				justify-content: space-between;
 				font-size: 15px;
-				&__names p{
-					line-height: 24px;
-					
+				&__names {
+					p{
+						line-height: 24px;
+					}
 				}
 				&__prices{
 					& p{
