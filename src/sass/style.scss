@@ -35,6 +35,10 @@ a:hover{
 p {
     margin: 0;
 }
+
+@import 'libs/slick.min.css';
+@import 'libs/slick-theme.min.css';
+@import 'libs/font-awesome.css';
 @import 'blocks/header';
 @import 'blocks/special-offer';
 @import 'blocks/price';
