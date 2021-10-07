@@ -30,12 +30,14 @@ a:hover{
   text-decoration: none;
   color: #000000;
 }
-
-
-p {
-    margin: 0;
+button{
+  outline:none;
 }
 
+p{
+    margin: 0;
+}
+@import 'libs/jquery.modal.min.css';
 @import 'libs/slick.min.css';
 @import 'libs/slick-theme.min.css';
 @import 'libs/font-awesome.css';
@@ -49,6 +51,7 @@ p {
 @import 'blocks/galarely';
 @import 'blocks/about';
 @import 'blocks/footer';
+@import 'blocks/modal';
 @import 'blocks/button';
 @import 'libs/swipebox';
 

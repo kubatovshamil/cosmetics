@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.modal.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head> 
 <body>
@@ -592,12 +594,11 @@
         <form class="consult__form" accept="/send" method="post">
           <input type="text" class="consult__form__name" name="name" placeholder="Введите имя" />
           <input type="tel" class="consult__form__number" name="number" placeholder="+7 (     )     -     -" />
-          <button class="consult__form__btn">Отправить</button>
+          <button type="submit" class="consult__form__btn">Отправить</button>
         </form>
       </div>
     </div>
   </section>
-
 
   <section class="fifth">
     <div class="subscriptions">
@@ -663,10 +664,7 @@
               </div>
           </div>
           <div class="cosmetology__education">
-            <div class="btn-close">
-                <span class="line"></span>
-                <span class="line2"></span>
-            </div>
+            <a href="#" class="btn-close">Закрыть</a>
             <p class="cosmetology__education__top">Образование – 2003 г. - Чайковский медицинский колледж по специальности «Сестринское дело». Квалификация «Медицинская сестра»</p>
             <p>Повышение квалификации</p>
             <p>2019 - мезотерапия, биоревитализация</p>
@@ -832,10 +830,7 @@
     </div>
 
     <div class="licenses">
-       <div class="btn-close">
-                <span class="line"></span>
-                <span class="line2"></span>
-        </div>
+        <a href="#" class="btn-close">Закрыть</a>
         <button type="button" class="prevArrow3"><i class="fa fa-chevron-left"></i></button>
         <div class="licenses__images">
 
@@ -863,6 +858,7 @@
 
     </div>
   </section>
+
 
   <footer class="footer">
     <div class="container">
@@ -913,8 +909,14 @@
       </div>
     </div>
   </footer>
+  <div id="ex1" class="modal">
+    <a href="#" rel="modal:close" class="btn-close">Закрыть</a>
+	<p class="modal__text">Cпасибо!</p>
+	<p class="modal__subtext">В ближайшее время с вами свяжется наш специалист</p>
+  	<a href="#" rel="modal:close" class="modal__btn">Закрыть</a>
+  </div>
 
-  <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+
   <script type="text/javascript" src="./js/slick.min.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./js/swipebox.min.js"></script>
@@ -945,6 +947,16 @@
         prevArrow: $('.prevArrow3'),
         nextArrow: $('.nextArrow3')
       });
+
+      $('.consult__form__btn').on('click', function(e){
+      	e.preventDefault();
+
+      	$("#ex1").modal({
+	 		showClose: false
+		});
+
+      });
+
 
       $( '.swipebox' ).swipebox();
 
