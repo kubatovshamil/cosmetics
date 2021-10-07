@@ -1,7 +1,3 @@
-import MicroModal from '../micromodal'; 
-
-MicroModal.init();
-
 const navMenu = document.querySelectorAll(".header__menu__item__link");
 const itemLink = document.querySelectorAll(".header__menu__item__link");
 

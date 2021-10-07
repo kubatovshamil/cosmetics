@@ -37,6 +37,45 @@ button{
 p{
     margin: 0;
 }
+
+
+
+.btn-close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 0px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 50%;
+  z-index: 3;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 10px;
+    height: 1px;
+    border: 1px solid #000000;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    top: 8px;
+    left: 4px;
+    border: 1px solid #000000;
+    transform: rotate(45deg);
+  }
+}
+
+
+
 @import 'libs/jquery.modal.min.css';
 @import 'libs/slick.min.css';
 @import 'libs/slick-theme.min.css';
